@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS Styling Begins */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* Nav Bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+nav a {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.4em;
+  margin: 0 30px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+.plan {
+  background-color: #ff764e;
+}
+
+.learn {
+  background-color: #5ed3eb;
+}
+
+.involved {
+  background-color: #ffcd69;
+}
+/* Welcome */
+
+.welcome img {
+  border-radius: 75%;
+  width: auto;
+  height: 250px;
+}
+
+.welcome {
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 100px;
+}
+
+.welcome h1 {
+  font-size: 3em;
+  font-family: "Chelsea Market", cursive;
+  margin-bottom: 20px;
+}
+
+.welcome .explore {
+  margin-bottom: 15px;
+}
+
+.welcome .open {
+  width: 250px;
+}
+
+/* Info */
+.info {
+  background-color: salmon;
+  margin: 20px 20px 10px 20px;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.2rem;
+}
+
+/* Icons */
+
+.icons img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 40px;
+}
+
+.icons div {
+  width: 240px;
+  text-align: center;
+  margin: 15px;
+}
+/* Footer */
+
+.landscape {
+  max-height: 400px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}

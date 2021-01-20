@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -131,10 +126,11 @@ table {
 /* CSS Styling Begins */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .container {
-  width: 100%;
+  width: 1440px;
   margin: auto;
 }
 
@@ -145,23 +141,19 @@ span {
 /* Nav Bar */
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px 10px;
-}
-
-nav {
-  margin: 10px;
+  /* border: 3px solid purple; */
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.4em;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  margin: 50px 0;
 }
 
 nav a {
-  padding: 5px;
+  margin: 0 8%;
+  padding: 10px;
   border-radius: 5px;
-  font-size: 1.4em;
-  margin: 0 30px;
-  color: white;
-  font-family: "Roboto Mono", monospace;
-  padding: 20px;
 }
 
 .plan {
@@ -175,35 +167,45 @@ nav a {
 .involved {
   background-color: #ffcd69;
 }
-/* Welcome */
 
-.welcome img {
-  border-radius: 75%;
-  width: auto;
-  height: 250px;
+/* Header */
+
+header {
+  /* border: 10px solid red; */
+  display: inline-block;
+  margin: auto;
+  position: relative;
 }
 
-.welcome {
-  display: flex;
+header img {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin: 20px 0 20px 100px;
+}
+
+header section {
+  display: inline-block;
+  /* border: 5px solid blue; */
+  width: 50%;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+header section h1 {
+  font-size: 4rem;
+  font-family: "Chelsea Market", cursive;
+  text-align: center;
+}
+
+header section p {
   font-family: "Roboto Mono", monospace;
   text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  margin: 40px 100px;
-}
-
-.welcome h1 {
-  font-size: 3em;
-  font-family: "Chelsea Market", cursive;
-  margin-bottom: 20px;
-}
-
-.welcome .explore {
-  margin-bottom: 15px;
-}
-
-.welcome .open {
-  width: 250px;
+  margin: 10px 0;
+  font-size: 2rem;
 }
 
 /* Info */
@@ -211,10 +213,7 @@ nav a {
   background-color: #ddb9a3;
   padding: 20px 50px;
   color: white;
-  margin: 0 15% 0 15%;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
+  margin: 25px 0 25px 0;
 }
 
 .info p {
@@ -227,7 +226,6 @@ nav a {
 }
 
 /* Icons */
-
 .icons img {
   width: 70px;
   height: auto;
@@ -235,12 +233,9 @@ nav a {
 }
 
 .icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 40px;
+  margin-left: 40%;
 }
 
 .icons div {
@@ -248,9 +243,18 @@ nav a {
   text-align: center;
   margin: 15px;
 }
+
+/* Image */
+
+div.image_trim {
+  max-width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
 /* Footer */
 
 footer {
   background-color: #f9e7dc;
-  padding: 40px;
+  border: 1px solid #f9e7dc;
 }
